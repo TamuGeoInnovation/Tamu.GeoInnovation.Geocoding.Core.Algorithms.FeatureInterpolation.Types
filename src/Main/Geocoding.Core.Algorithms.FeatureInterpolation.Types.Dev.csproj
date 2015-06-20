@@ -96,58 +96,6 @@
     </Reference>
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml" />
-    <Reference Include="Tamu.GeoInnovation.AddressProcessing.Core">
-      <HintPath>..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\AddressProcessing\AddressProcessing.Core\build\2.9.3\release\Tamu.GeoInnovation.AddressProcessing.Core.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Common.Census">
-      <HintPath>..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Census\build\1.0.0\release\Tamu.GeoInnovation.Common.Census.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Common.Core.Addresses">
-      <HintPath>..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\Addresses\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Addresses.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Common.Core.ExceptionHandling">
-      <HintPath>..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\ExceptionHandling\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.ExceptionHandling.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Common.Core.Geo.GeographicFeatures.Streets">
-      <HintPath>..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\Geo.GeographicFeatures.Streets\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Geo.GeographicFeatures.Streets.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Common.Core.Geo.Geometries">
-      <HintPath>..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\Geo.Geometries\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Geo.Geometries.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Common.Core.Geo.Units">
-      <HintPath>..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\Geo.Units\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Geo.Units.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Common.Core.Utils">
-      <HintPath>..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Core\Utils\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Utils.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Common.Data.Databases">
-      <HintPath>..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Common\Data\Databases\build\1.0.0\release\Tamu.GeoInnovation.Common.Data.Databases.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Geocoding.Core.Algorithms.FeatureMatching.MatchedFeature">
-      <HintPath>..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Geocoding\Core.Algorithms.FeatureMatching.MatchedFeatures\build\1.0.0\release\Tamu.GeoInnovation.Geocoding.Core.Algorithms.FeatureMatching.MatchedFeature.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Geocoding.Core.Metadata.FeatureInterpolationTypes">
-      <HintPath>..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Geocoding\Core.Metadata.FeatureInterpolationTypes\build\1.0.0\release\Tamu.GeoInnovation.Geocoding.Core.Metadata.FeatureInterpolationTypes.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Geocoding.Core.OutputData.Errors">
-      <HintPath>..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Geocoding\Core.OutputData.Errors\build\1.0.0\release\Tamu.GeoInnovation.Geocoding.Core.OutputData.Errors.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Tamu.GeoInnovation.Geocoding.Core.Queries">
-      <HintPath>..\..\..\..\..\..\..\DevBuild\Tamu\GeoInnovation\Geocoding\Core.Queries\build\1.0.0\release\Tamu.GeoInnovation.Geocoding.Core.Queries.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algorithms\FeatureInterpolationMethods\IneterpolationMethodNames.cs" />
@@ -191,6 +139,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LICENSE.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common.Core.Utils\Src\Main\Common.Core.Utils.Dev.csproj">
+      <Project>{0744A732-A7FE-4658-967D-C5A583EF08E4}</Project>
+      <Name>Common.Core.Utils.Dev</Name>
+      <Private>False</Private>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!--  
